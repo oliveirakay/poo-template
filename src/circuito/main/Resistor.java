@@ -3,7 +3,7 @@ package circuito.main;
 public class Resistor implements Circuit {
     private double resistance;
     @Override
-    public double getResistence() {
+    public double getResistance() {
         // TODO Auto-generated method stub
         return resistance;
     }

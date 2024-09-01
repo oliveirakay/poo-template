@@ -6,10 +6,10 @@ package circuito.main;
  */
 public class SerialCircuit extends CompositeCircuit{
     @Override
-    public double getResistence() {
+    public double getResistance() {
         double totalSerialResistance = 0;
         for (Circuit circuit : circuits) {
-            totalSerialResistance += circuit.getResistence();
+            totalSerialResistance += circuit.getResistance();
         }
         return totalSerialResistance;
     }
