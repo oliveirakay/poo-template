@@ -9,6 +9,5 @@ abstract class Poligono extends FormaGeometrica{
         for (int i = 0; i < pontos.length; i++) {
             this.pontos[i] = new Ponto(pontos[i]);
         }
-    
     }
 }
