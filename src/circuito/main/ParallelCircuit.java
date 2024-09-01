@@ -5,6 +5,11 @@ package circuito.main;
  */
 public class ParallelCircuit extends CompositeCircuit{
 
+
+    public ParallelCircuit(Circuit[] circuits){
+        this.circuits = circuits;
+    }
+
     @Override
     public double getResistence() {
 
