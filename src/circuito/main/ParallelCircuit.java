@@ -11,12 +11,14 @@ public class ParallelCircuit extends CompositeCircuit{
     }
 
     @Override
-    public double getResistance() {
+    public double getResistance() { 
 
-        double totalParallelResistance = 0;
+        double totalParallelResistance;
+        double somatorio = 0;
         for (Circuit circuit : circuits) {
-            totalParallelResistance += 1/circuit.getResistance();
+            somatorio += 1/circuit.getResistance();
         }
+        totalParallelResistance = 1/somatorio;
         return totalParallelResistance;
     }
 }
