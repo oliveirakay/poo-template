@@ -7,7 +7,7 @@ public class ParallelCircuit extends CompositeCircuit{
 
 
     public ParallelCircuit(Circuit[] circuits){
-        this.circuits = circuits;
+        super(circuits);
     }
 
     @Override

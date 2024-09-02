@@ -15,7 +15,7 @@ public class SerialCircuit extends CompositeCircuit{
     }
 
     public SerialCircuit (Circuit[] circuits){
-        this.circuits = circuits; // Duvida, eu aqui estou copiando a referencia de um ponteiro ou eh uma memoria nova?
+        super(circuits);// Duvida, eu aqui estou copiando a referencia de um ponteiro ou eh uma memoria nova?
 
     }
 }
